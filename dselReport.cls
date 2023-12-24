@@ -5,9 +5,9 @@
 
 %中文latax模版
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{AvicReport}
-              [2022/02/27 v1.0 The LaTeX template for Report in Avic]
-\typeout{Document Class `AvicReport' v0.1 by JinghuaGao}
+\ProvidesClass{dselReport}
+              [2023/12/24  Merry Christmas v1.0 The LaTeX template for Report in dsel]
+\typeout{Document Class `deslReport' v0.1 by JinghuaGao}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexart}}
 \ProcessOptions\relax
@@ -96,9 +96,6 @@
 
 
 
-
-
-
 %%%% 段落首行缩进两个字 %%%%
 \makeatletter
 \let\@afterindentfalse\@afterindenttrue
@@ -137,6 +134,8 @@
 \newtheorem{conclusion}{结论}
 \newtheorem{assumption}{假设}
 
+\newcommand\subtitle[1]{{\sanhao #1}}
+
 %%%% 重定义 %%%%
 \renewcommand{\contentsname}{目录}  % 将Contents改为目录
 \renewcommand{\abstractname}{摘要}  % 将Abstract改为摘要
@@ -156,7 +155,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \fancypagestyle{plain}{ \fancyhf{}\vspace{10pt}
 \lhead{}
-\chead{\vspace{0.6cm}\centering{{\CJKfamily{hei}\xiaowuhao 金航数码科技有限责任公司研发中心(产品)文档}}}
+\chead{\vspace{0.6cm}\centering{{\CJKfamily{hei}\xiaowuhao 深空探测实验室文档}}}
 \rhead{}
 \lfoot{}
 \cfoot{}
@@ -170,7 +169,7 @@
 \pagestyle{fancy} 
 \fancyhf{}
 % \fancyhead[RE]{{\footnotesize 第~xx~卷~~~}} 
-\fancyhead[C]{{\footnotesize 金航数码科技有限责任公司研发中心(产品)文档}}
+\fancyhead[C]{{\footnotesize 深空探测实验室文档}}
 %\fancyhead[LE,RO]{~~~\footnotesize\thepage ~~~}
 % \fancyhead[LO]{{\footnotesize ~~~第~x~期}}
 \lfoot{}

@@ -1,6 +1,6 @@
 
 
-\documentclass[a4paper, 10pt]{AvicReport}
+\documentclass[a4paper, 10pt]{dselReport}
 
 \linespread{1.5}%设置行距为18pt
 \hypersetup{colorlinks=true,linkcolor=black}%设置目录超链接方式
@@ -13,12 +13,14 @@
 
 
 %%%% 定义标题格式，包括title，author，affiliation，email等 %%%%
-\title{研发中心文档\LaTeX 模板 }
+\title{深空探测实验室\LaTeX 模板 \\ \subtitle{月球大工程} }
 
-\author{奥本海默
-\footnote{电子邮件: AoBenhai@gmail.com}\\[4ex]
+
+
+\author{净整没用的
+\footnote{电子邮件: jingzhengmeiyongde@dsel.mail.com}\\[4ex]
 }
-\date{2022年2月}
+\date{2023年12月}
 
 
 \CKeyword{关键词1;关键词2;}%填入关键词
@@ -28,12 +30,36 @@
 \maketitle
 
 \newpage
+\thispagestyle {empty}  %设置空白页，并删除页眉页脚
+\mbox{}
+\newpage
+
+\newpage
 \begin{abstract}
 美国陆军部于1942年6月开始实施利用核裂变反应来研制原子弹的计划，亦称曼哈顿计划(Manhattan Project)。该工程集中了当时西方国家（除纳粹德国外）最优秀的核科学家，动员了10万多人参加这一工程，历时3年，耗资20亿美元，于1945年7月16日成功地进行了世界上第一次核爆炸，并按计划制造出两颗实用的原子弹。整个工程取得圆满成功。在工程执行过程中，负责人L.R.格罗夫斯和R.奥本海默应用了系统工程的思路和方法，大大缩短了工程所耗时间。这一工程的成功促进了第二次世界大战后系统工程的发展。
 \end{abstract}
 
 {\hei\sihao \makebox{关键词}:} \avicitCKeyword
 
+
+%%%% 以下部分为前言， 请替换 相应文字 %%%%  
+\newpage
+\setcounter{page}{1}
+
+\begin{center}
+    \sanhao\hei{前言}
+\end{center}~\
+
+这是前言部分.
+
+强化 细化 深化
+
+打造 建造 创造 
+
+\newpage
+
+
+%%%% 以下部分为正文内容， 请替换 相应文字 %%%%  
 \newpage
 \begin{center}
 \tableofcontents
